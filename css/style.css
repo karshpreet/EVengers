@@ -6,6 +6,10 @@
     --dark: #14141F;
 }
 
+html,body{
+    width:100%;
+    height:100%;
+}
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -83,7 +87,7 @@
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    color: #FFFFFF !important;
+    color: #000000 !important;
     font-size: 18px;
     font-weight: 600;
     outline: none;
@@ -377,6 +381,9 @@
 
 
 /*** Footer ***/
+.footer{
+    width:100%;
+}
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
