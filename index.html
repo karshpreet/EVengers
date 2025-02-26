@@ -92,7 +92,6 @@
                             <a href="Process.html" class="dropdown-item">Process</a>
                             <a href="team.html" class="dropdown-item">EV Guides</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
                         </div>
                     </div>
                     <!--<a href="contact.html" class="nav-item nav-link">Contact</a>-->
@@ -352,26 +351,34 @@
     <div class="container">
         <div class="text-center">
             <h6 class="section-title bg-white text-center text-primary px-3">Successful Launches</h6>
-            <h1 class="mb-5">Delivered Sites</h1>
+            <h1 class="mb-5" >Delivered Sites</h1>
         </div>
 
         <!-- Flexbox Layout -->
         <div class="destination-flex">
-            <div class="destination-item">
+            <div class="destination-item " index="dest-1">
                 <img src="img/destination-4.jpg" alt="Indore">
-                <span class="location-tag">Indore</span>
+                <span class="location-tag" style="color:#8CC63F;">Indore</span>
             </div>
-            <div class="destination-item">
+            <div class="destination-item " index="dest-2">
                 <img src="img/destination-2.jpg" alt="Orissa">
-                <span class="location-tag">Orissa</span>
+                <span class="location-tag" style="color:#8CC63F;">Orissa</span>
             </div>
-            <div class="destination-item">
+            <div class="destination-item" index="dest-3">
                 <img src="img/destination-3.jpg" alt="West Bengal">
-                <span class="location-tag">West Bengal</span>
+                <span class="location-tag" style="color:#8CC63F;">West Bengal</span>
             </div>
-            <div class="destination-item">
+            <div class="destination-item" index="dest-4">
                 <img src="img/destination-1.jpg" alt="Mumbai">
-                <span class="location-tag">Mumbai</span>
+                <span class="location-tag" style="color:#8CC63F;">Mumbai</span>
+            </div>
+            <div class="destination-item" index="dest-5">
+                <img src="img/delhi-NCR.jpg" alt="delhi-NCR">
+                <span class="location-tag" style="color:#8CC63F;">Delhi-NCR</span>
+            </div>
+            <div class="destination-item" index="dest-6">
+                <img src="img/goa.jpg" alt="Goa">
+                <span class="location-tag" style="color:#8CC63F;">Goa</span>
             </div>
         </div>
     </div>
@@ -526,25 +533,25 @@
     Package Presence end-->
 
     <!-- Presesnce operational start-->
-    <section class="our-presence">
+    <section class="our-presence" style="width:100%;">
         <div class="presence-container">
             <div class="presence-left">
                 <h2>Spreading Our Footprint Across India with Excellence and Commitment</h2>
                 <ul>
-                    <li>MADHYA PRADESH</li>
-                    <li>MAHARASHTRA</li>
-                    <li>GUJARAT</li>
-                    <li>SIKKIM</li>
-                    <li>JHARKHAND</li>
-                    <li>ORISSA</li>
-                    <li>TELANGANA</li>
-                    <li>GOA</li>
-                    <li>WEST BENGAL</li>
-                    <li>HYDERABAD</li>
-                    <li>BIHAR</li>
-                    <li>UTTAR PRADESH</li>
-                    <li>DELHI NCR</li>
-                    <li>ANDHRA PRADESH</li>
+                    <li  style="color:#111111;">MADHYA PRADESH</li>
+                    <li  style="color:#111111;">MAHARASHTRA</li>
+                    <li  style="color:#111111;">GUJARAT</li>
+                    <li  style="color:#111111;">SIKKIM</li>
+                    <li  style="color:#111111;">JHARKHAND</li>
+                    <li  style="color:#111111;">ORISSA</li>
+                    <li  style="color:#111111;">TELANGANA</li>
+                    <li  style="color:#111111;">GOA</li>
+                    <li  style="color:#111111;">WEST BENGAL</li>
+                    <li  style="color:#111111;">HYDERABAD</li>
+                    <li  style="color:#111111;">BIHAR</li>
+                    <li  style="color:#111111;">UTTAR PRADESH</li>
+                    <li  style="color:#111111;">DELHI NCR</li>
+                    <li  style="color:#111111;">ANDHRA PRADESH</li>
                 </ul>
             </div>
     </section>
@@ -552,18 +559,22 @@
 
      <!-- Presence operational end -->
     <!--contact us reference start-->
-     <div class="container-fluid py-5 w-100 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="booking p-5 text-center text-white" style="width: 100%;">
-            <h1 class="text-white mb-4">
+    <div class="container-fluid py-5 w-100 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="booking p-5 text-center text-white position-relative" 
+            style="width: 100%; background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+            <div class="overlay" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);"></div>
+            <h1 class="text-white mb-4 position-relative">
                 Need Help with Charging Stations or Navigation?
             </h1>
-            <p class="mb-4">
+            <p class="mb-4 position-relative">
                 We’re here to guide you every step of the way. 
                 Get in touch with us for assistance!
             </p>
-            <a class="btn btn-outline-light py-3 px-5 mt-2" href="contact.html">Contact Us</a>
+            <a class="btn btn-outline-light py-3 px-5 mt-2 position-relative" href="contact.html">Contact Us</a>
         </div>
     </div>
+    
     
     <!--contact us reference end-->
 
@@ -575,48 +586,44 @@
                 <h1 class="mb-5">3 Easy Steps</h1>
             </div>
             <div class="row gy-5 gx-4 justify-content-center">
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s" 
+                    style="display: flex; align-items: stretch;">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4 w-100 d-flex flex-column">
                         <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                             <i class="fa fa-globe fa-3x text-white"></i>
                         </div>
-                        <h5 class="mt-4">Finding and Reaching a Charger</h5>
+                        <h5 class="mt-4 flex-grow-1">Finding and Reaching a Charger</h5>
                         <hr class="w-25 mx-auto bg-primary mb-1">
                         <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Locate the nearest compatible station, navigate with minimal detours.
-
-
-
-
-
-
-
-                        </p>
+                        <p class="mb-0" style="color:#000000;">Find the nearest compatible charging station, plan your route efficiently, and reach your destination with minimal detours.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s" 
+                    style="display: flex; align-items: stretch;">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4 w-100 d-flex flex-column">
                         <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                             <i class="fa fa-dollar-sign fa-3x text-white"></i>
                         </div>
-                        <h5 class="mt-4">Connecting and Charging</h5>
+                        <h5 class="mt-4 flex-grow-1">Connecting and Charging</h5>
                         <hr class="w-25 mx-auto bg-primary mb-1">
                         <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Establish a secure connection, start charging seamlessly, and monitor progress with ease.</p>
+                        <p class="mb-0" style="color:#000000;">Securely connect to a charging station, ensure a stable power flow, and keep track of your charging progress effortlessly.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s" 
+                    style="display: flex; align-items: stretch;">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4 w-100 d-flex flex-column">
                         <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                             <i class="fa fa-plane fa-3x text-white"></i>
                         </div>
-                        <h5 class="mt-4">Driving Forward with Confidence</h5>
+                        <h5 class="mt-4 flex-grow-1">Driving Forward with Confidence</h5>
                         <hr class="w-25 mx-auto bg-primary mb-1">
                         <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Maximize range, drive efficiently, and resume your journey smoothly.</p>
+                        <p class="mb-0" style="color:#000000;">Optimize your driving range, make the most of every charge, and get back on the road with confidence and ease.</p>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     <!-- Process Start -->
@@ -712,25 +719,25 @@
                     <!--<img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">-->
                     <h5 class="mb-0">John Doe</h5>
                     <p>New York, USA</p>
-                    <p class="mb-0">The EV charging stations have been a game-changer for our fleet operations. Reliable, efficient, and easy to use—exactly what we needed to meet our sustainability goals.</p>
+                    <p class="mb-0" style="color:#000000;">The EV charging stations have been a game-changer for our fleet operations. Reliable, efficient, and easy to use—exactly what we needed to meet our sustainability goals.</p>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
                     <!--<img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">-->
                     <h5 class="mb-0">John Doe</h5>
                     <p>New York, USA</p>
-                    <p class="mt-2 mb-0">Installing EV charging stations at my commercial property has significantly increased foot traffic and customer satisfaction. It's an investment that pays off for both the environment and my business.</p>
+                    <p class="mt-2 mb-0" style="color:#000000;">Installing EV charging stations at my commercial property has significantly increased foot traffic and customer satisfaction. It's an investment that pays off for both the environment and my business.</p>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
                     <!--<img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">-->
                     <h5 class="mb-0">John Doe</h5>
                     <p>New York, USA</p>
-                    <p class="mt-2 mb-0">I’ve tried multiple charging stations, but these stand out for their speed and convenience. The seamless experience keeps me coming back every time I’m on the road.</p>
+                    <p class="mt-2 mb-0" style="color:#000000;">I’ve tried multiple charging stations, but these stand out for their speed and convenience. The seamless experience keeps me coming back every time I’m on the road.</p>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
                     <!--<img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">-->
                     <h5 class="mb-0">John Doe</h5>
                     <p>New York, USA</p>
-                    <p class="mt-2 mb-0">Integrating EV charging stations into our residential complex has been a huge success. Residents appreciate the convenience, and it's a step forward in creating a greener community.</p>
+                    <p class="mt-2 mb-0" style="color:#000000;">Integrating EV charging stations into our residential complex has been a huge success. Residents appreciate the convenience, and it's a step forward in creating a greener community.</p>
                 </div>
             </div>
         </div>

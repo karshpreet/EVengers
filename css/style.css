@@ -683,3 +683,10 @@ ul li:hover {
     flex-wrap: wrap; /* Ensures proper alignment of columns */
     align-items: stretch; /* Ensures all items stretch to the same height */
 }
+/* index.html destination section*/
+.destination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/*contact reference*/
