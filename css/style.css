@@ -594,5 +594,76 @@ html,body{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+/* Mission, Vision, and Values Section Styling */
+.mission-vision-values {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+h3.text-primary {
+    color: #8CC63F; /* Green theme color */
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ddd;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+ul li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #8CC63F; /* Green text */
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    text-align: center;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    background-color: #8CC63F;
+    color: black;
+}
+
+/* Add animation */
+.wow {
+    visibility: visible;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
