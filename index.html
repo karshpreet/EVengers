@@ -59,7 +59,7 @@
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/ekta-telecommunication/"><i class="fab fa-linkedin-in fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
                 </div>
@@ -350,52 +350,85 @@
         </div>
     </div>
     <!-- Service End -->
+<!-- Destination Section -->
+<div class="container-xxl py-5 destination">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3">Successful Launches</h6>
+            <h1 class="mb-5">Delivered Sites</h1>
+        </div>
 
-
-    <!-- Destination Start -->
-    <div class="container-xxl py-5 destination">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Successful Launches</h6>
-                <h1 class="mb-5">Delivered Sites</h1>
+        <!-- Flexbox Layout -->
+        <div class="destination-flex">
+            <div class="destination-item">
+                <img src="img/destination-4.jpg" alt="Indore">
+                <span class="location-tag">Indore</span>
             </div>
-            <div class="row g-3">
-                <div class="col-lg-7 col-md-6">
-                    <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/destination-1.jpg" alt="">
-                                <!-- <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"></div> -->
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Mumbai</div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid h-100" src="img/destination-2.jpg" alt="">
-                              <!--  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div> -->
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Orissa</div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/destination-3.jpg" alt="">
-                               <!-- <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div> -->
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">West Bengal</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/destination-4.jpg" alt="" style="object-fit: cover;">
-                      <!--  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div> -->
-                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Indore</div>
-                    </a>
-                </div>
+            <div class="destination-item">
+                <img src="img/destination-2.jpg" alt="Orissa">
+                <span class="location-tag">Orissa</span>
+            </div>
+            <div class="destination-item">
+                <img src="img/destination-3.jpg" alt="West Bengal">
+                <span class="location-tag">West Bengal</span>
+            </div>
+            <div class="destination-item">
+                <img src="img/destination-1.jpg" alt="Mumbai">
+                <span class="location-tag">Mumbai</span>
             </div>
         </div>
     </div>
-    <!-- Destination end -->
+</div>
+
+<!-- Styling -->
+<style>
+/* Flexbox Layout */
+.destination-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Image container */
+.destination-item {
+    position: relative;
+    width: calc(50% - 10px); /* Ensures 2 images per row */
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Image styling */
+.destination-item img {
+    width: 100%;
+    height: 200px; /* Fixed height to maintain consistency */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Location tag */
+.location-tag {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Responsive - Single Column */
+@media (max-width: 768px) {
+    .destination-item {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .destination-item img {
+        height: auto; /* Adjust height automatically */
+    }
+}
+</style>
 
 
     <!--Package Presence start -->
