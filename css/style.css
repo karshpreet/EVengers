@@ -667,3 +667,19 @@ ul li:hover {
 
 
 
+/* about sextion in index.html */
+.service-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures all boxes are the same height */
+}
+
+.service-item .p-4 {
+    flex-grow: 1; /* Makes sure content fills the available space evenly */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Ensures proper alignment of columns */
+    align-items: stretch; /* Ensures all items stretch to the same height */
+}
