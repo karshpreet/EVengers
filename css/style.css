@@ -671,7 +671,7 @@ ul li:hover {
 .service-item {
     display: flex;
     flex-direction: column;
-    height: 100%; /* Ensures all boxes are the same height */
+    min-height: 100%; /* Ensures all boxes are the same height */
 }
 
 .service-item .p-4 {
