@@ -516,7 +516,7 @@ html,body{
 @media (max-width: 768px) {
     .circular-progress p {
         font-size: 8px; /* Smaller font for better fit */
-        min-height: 35px; /* Adjust uniform height */
+        min-height: 25px; /* Adjust uniform height */
         padding: 5px;
         margin-bottom :10px; /* Adds spacing for readability */
     }
@@ -542,7 +542,7 @@ html,body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 80px;
     margin-top: 30px;
 }
 }
