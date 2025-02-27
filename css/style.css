@@ -456,7 +456,7 @@ html,body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     margin-top: 20px;
 }
 
@@ -507,9 +507,36 @@ html,body{
 /* Labels */
 .circular-progress p {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     color: white;
+    text-align: center;
+    word-wrap: break-word;
+}
+@media (max-width: 768px) {
+    .circular-progress p {
+        font-size: 8px; /* Smaller font for better fit */
+        min-height: 35px; /* Adjust uniform height */
+        padding: 5px; /* Adds spacing for readability */
+    }
+    /* SVG Circle Styling */
+    .circular-progress {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+    }
+    /* Percentage Number */
+.circular-progress .percentage {
+    position: absolute;
+    top: 62%;
+    left: 60%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
 }
 /*** Presence operational  ***/
 .our-presence {
