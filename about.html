@@ -272,6 +272,65 @@
     height: 88px;
     visibility: hidden;
 }
+/* General Mobile Adjustments */
+@media (max-width: 768px) {
+    .col-lg-6 img{
+        margin-bottom: 40px;
+        height:200px;
+        width: 400px;
+    }
+   
+    /* Partners Section */
+    .honeycomb {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hex {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .hex img {
+        width: 60px;
+        height: auto;
+    }
+
+    .spacer {
+        display: none; /* Hide spacer for mobile */
+    }
+    .our-values h3 {
+        font-size: 22px; /* Adjust heading size for mobile */
+        margin-top: 20px; /* Reduce top margin */
+    }
+
+    .our-values ul {
+        padding-left: 0; /* Remove unwanted left padding */
+        text-align: center; /* Center align for better readability */
+    }
+
+    .our-values li {
+        font-size: 14px; /* Adjust font size for better visibility */
+        margin-bottom: 10px; /* Reduce space between list items */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our-values li i {
+        margin-right: 8px; /* Space between icon and text */
+        font-size: 16px; /* Adjust icon size */
+    }
+}
+
 </style>
           </div>
         </div>
@@ -280,8 +339,9 @@
 <!-- About End -->
        
 
+
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" >
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-8 wow fadeIn" data-wow-delay="0.1s" >
             <div class="container py-5" >
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
@@ -297,7 +357,7 @@
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Prakrati Corporate Building 18/2, Yashwant Niwas Road, Indore – 452 001
                         </p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 97116 87305 </p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>etplmanager@etplnetworks.com</p>
+                        <p class="mb-2" style="font-size: 15px;"><i class="fa fa-envelope me-3"></i>etplmanager@etplnetworks.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -382,4 +442,3 @@
 </body>
 
 </html>
-
