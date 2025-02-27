@@ -516,7 +516,7 @@ html,body{
 @media (max-width: 768px) {
     .circular-progress p {
         font-size: 8px; /* Smaller font for better fit */
-        min-height: 25px; /* Adjust uniform height */
+        min-height: 15px; /* Adjust uniform height */
         padding: 5px;
         margin-bottom :10px; /* Adds spacing for readability */
     }
