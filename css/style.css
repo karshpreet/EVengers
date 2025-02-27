@@ -538,6 +538,13 @@ html,body{
     font-weight: bold;
     color: white;
 }
+.circular-progress-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
 }
 /*** Presence operational  ***/
 .our-presence {
