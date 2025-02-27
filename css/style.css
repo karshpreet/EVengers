@@ -517,7 +517,8 @@ html,body{
     .circular-progress p {
         font-size: 8px; /* Smaller font for better fit */
         min-height: 35px; /* Adjust uniform height */
-        padding: 5px; /* Adds spacing for readability */
+        padding: 5px;
+        margin-bottom :10px; /* Adds spacing for readability */
     }
     /* SVG Circle Styling */
     .circular-progress {
