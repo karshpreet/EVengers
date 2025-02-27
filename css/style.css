@@ -613,12 +613,12 @@ h3.text-primary {
 }
 
 p {
-    color: #ddd;
+    color: #fff;
     font-size: 1.1rem;
     line-height: 1.8;
     max-width: 900px;
     margin: 0 auto 30px;
-    text-align: center;
+    text-align: justify;
 }
 
 ul {
@@ -638,7 +638,7 @@ ul li {
     font-weight: 500;
     font-size: 1.1rem;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-    text-align: center;
+    text-align: left;
 }
 
 ul li:hover {
@@ -689,4 +689,5 @@ ul li:hover {
     flex-wrap: wrap;
     gap: 20px;
 }
-/*contact reference*/
+/*no hover link*/
+
