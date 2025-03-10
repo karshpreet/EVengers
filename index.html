@@ -73,7 +73,7 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" style="background-color: #ffffff; color:#000000">
             <a href="" class="navbar-brand p-0" style="display: flex; gap:5px;"> 
-                <img src="img/logo.jpg" alt="Logo" style="width: 120px; height: 100px; display: block; margin: auto;">
+                <img src="img/logo.jpg" alt="Logo" style="width: 80px; height: 100px; display: block; margin: auto;">
 
 
  
@@ -510,29 +510,61 @@
     Package Presence end-->
 
     <!-- Presesnce operational start-->
-    <section class="our-presence" style="width:100%;">
-        <div class="presence-container">
-            <div class="presence-left">
-                <h2>Spreading Our Footprint Across India with Excellence and Commitment</h2>
-                <ul>
-                    <li  style="color:#111111;">MADHYA PRADESH</li>
-                    <li  style="color:#111111;">MAHARASHTRA</li>
-                    <li  style="color:#111111;">GUJARAT</li>
-                    <li  style="color:#111111;">SIKKIM</li>
-                    <li  style="color:#111111;">JHARKHAND</li>
-                    <li  style="color:#111111;">ORISSA</li>
-                    <li  style="color:#111111;">TELANGANA</li>
-                    <li  style="color:#111111;">GOA</li>
-                    <li  style="color:#111111;">WEST BENGAL</li>
-                    <li  style="color:#111111;">HYDERABAD</li>
-                    <li  style="color:#111111;">BIHAR</li>
-                    <li  style="color:#111111;">UTTAR PRADESH</li>
-                    <li  style="color:#111111;">DELHI NCR</li>
-                    <li  style="color:#111111;">ANDHRA PRADESH</li>
-                </ul>
-            </div>
-    </section>
-     
+    <!-- Presence operational start-->
+<section class="our-presence" style="width:100%;">
+    <div class="presence-container">
+        <div class="presence-left">
+            <h2>Spreading Our Footprint Across India with Excellence and Commitment</h2>
+            <div id="map"></div>
+        </div>
+    </div>
+</section>
+<!-- Presence operational end -->
+
+<!-- Leaflet Map Dependencies -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<style>
+    #map {
+        height: 600px;
+        width: 100%;
+        margin-top: 20px;
+    }
+</style>
+
+<script>
+    var map = L.map('map').setView([22.3511, 78.6677], 5);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var statesData = {
+        "INMH": { "name": "Maharashtra", "coordinates": [19.7515, 75.7139], "color": "#FF5733", "image": "img/MP.jpg", "remark": "We have successfully set up the station here." },
+        "INMP": { "name": "Madhya Pradesh", "coordinates": [23.2599, 77.4126], "color": "#33FF57", "image": "img/madhya_pradesh.jpg", "remark": "Operations running smoothly." },
+        "INGJ": { "name": "Gujarat", "coordinates": [22.2587, 71.1924], "color": "#5733FF", "image": "img/gujarat.jpg", "remark": "New project initiated." },
+        "INBR": { "name": "Bihar", "coordinates": [25.0961, 85.3131], "color": "#FFC300", "image": "img/bihar.jpg", "remark": "Infrastructure improvements underway." },
+        "INDEL": { "name": "Delhi NCR", "coordinates": [28.6139, 77.2090], "color": "#C70039", "image": "img/delhi.jpg", "remark": "Capital region development progressing well." },
+        "INGA": { "name": "Goa", "coordinates": [15.2993, 74.1240], "color": "#900C3F", "image": "img/goa.jpg", "remark": "Tourism sector booming." },
+        "INOR": { "name": "Odisha", "coordinates": [20.9517, 85.0985], "color": "#581845", "image": "img/odisha.jpg", "remark": "New industrial zone in development." },
+        "INWB": { "name": "West Bengal", "coordinates": [22.9868, 87.8550], "color": "#1F618D", "image": "img/west_bengal.jpg", "remark": "We are expanding networks here." }
+    };
+
+    Object.keys(statesData).forEach(state => {
+        let data = statesData[state];
+        let marker = L.circleMarker(data.coordinates, {
+            color: data.color,
+            radius: 8,
+            fillOpacity: 0.8
+        }).addTo(map);
+
+        marker.bindPopup(
+            `<b>${data.name}</b><br><img src='${data.image}' style='width:150px; height:auto; display:block; margin:5px 0;'><br>${data.remark}`
+        );
+    });
+</script>
+
 
      <!-- Presence operational end -->
     <!--contact us reference start-->
@@ -607,7 +639,7 @@
 
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+   <!-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">EV Guide</h6>
@@ -617,8 +649,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <!--<img class="img-fluid" src="img/team-1.jpg" alt="">-->
-                        </div>
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">-->
+                       <!-- </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -633,8 +665,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <!--<img class="img-fluid" src="img/team-2.jpg" alt="">-->
-                        </div>
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">-->
+                      <!--  </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -649,8 +681,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <!--<img class="img-fluid" src="img/team-3.jpg" alt="">-->
-                        </div>
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">-->
+                       <!-- </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -665,8 +697,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <!--<img class="img-fluid" src="img/team-4.jpg" alt="">-->
-                        </div>
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">-->
+                      <!--  </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -680,8 +712,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Team End -->
+    </div> 
+     Team End -->
 
 
     <!-- Testimonial Start -->
