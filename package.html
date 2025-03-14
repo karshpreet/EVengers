@@ -30,6 +30,77 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+       .jobApplication {
+    padding: 20px;
+    color: #86B817;
+    max-width: 1000px; /* Adjust width for better centering */
+    margin: auto; /* Centers the form */
+}
+
+/* Form Layout */
+.form-group {
+    display: flex;
+    align-items: center; /* Aligns labels and inputs */
+    gap: 15px;
+    margin: 10px 0;
+}
+
+/* Labels */
+.form-group label {
+    width: 200px; /* Uniform label width */
+    text-align: right; /* Aligns text to right */
+    font-weight: bold;
+}
+
+/* Inputs and Textarea */
+.form-group input,
+.form-group textarea {
+    flex: 1; /* Takes remaining space */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 16px;
+}
+
+/* File Input */
+.form-group input[type="file"] {
+    width: auto; /* Prevents full width */
+}
+
+/* Submit Button */
+.form-button {
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    background-color: #86B817;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+    display: block;
+    margin: auto; /* Centers button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column; /* Stacks label & input on mobile */
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%;
+        text-align: left;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+}
+
+    </style>
 </head>
 
 <body>
@@ -69,8 +140,11 @@
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" style="background-color: #ffffff;">
-            <a href="" class="navbar-brand p-0">
-                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Tourist</h1>
+            <a href="" class="navbar-brand p-0" style="display: flex; gap:5px;"> 
+                <img src="img/logo.jpg" alt="Logo"> 
+                <!--<h1 class="text-primary m-0"><!--<i class="fa fa-map-marker-alt me-3"></i>Pulse</h1> -->
+            </a>
+                <!-- <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Tourist</h1> -->
                 <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -79,22 +153,22 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <a href="package.html" class="nav-item nav-link active">Careers</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="service.html" class="nav-item nav-link active">Services</a>
+                    <a href="package.html" class="nav-item nav-link">Careers</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
-                            <a href="destination.html" class="dropdown-item">Destination</a>
-                            <a href="booking.html" class="dropdown-item">Booking</a>
-                            <a href="team.html" class="dropdown-item">Travel Guides</a>
+                            <a href="Delivered Sites.html" class="dropdown-item">Delivered Sites</a>
+                            <a href="Process.html" class="dropdown-item">Process</a>
+                            <a href="team.html" class="dropdown-item">EV Guides</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
+                            
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <!--<a href="contact.html" class="nav-item nav-link">Contact</a>-->
                 </div>
-                <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
+                <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Contact Us</a>
             </div>
         </nav>
 
@@ -123,7 +197,7 @@
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Careers</h6>
-                <h1 class="mb-5">Awesome Careers</h1>
+                <h1 class="mb-5">Apply for Jobs</h1>
             </div>
           <!--<div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -222,8 +296,8 @@
 </head>
 <body>
     <div class="container">
-        <h2>Apply for a Job</h2>
-        <form action="#" method="post">
+        <!-- <h1 class="mb-5" style="text-align:center;">Apply for job</h1> -->
+        <form action="#" method="post" class="jobApplication">
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required>
@@ -259,7 +333,7 @@
                 <textarea id="cover-letter" name="cover-letter" rows="4" placeholder="Write a short cover letter..."></textarea>
             </div>
             
-            <button type="submit">Submit Application</button>
+            <button type="submit" class="form-button">Submit Application</button>
         </form>
     </div>
 </body>
@@ -289,49 +363,49 @@
 
 
     <!-- Process Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
-                <h1 class="mb-5">3 Easy Steps</h1>
-            </div>
-            <div class="row gy-5 gx-4 justify-content-center">
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                            <i class="fa fa-globe fa-3x text-white"></i>
-                        </div>
-                        <h5 class="mt-4">Choose A Destination</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                            <i class="fa fa-dollar-sign fa-3x text-white"></i>
-                        </div>
-                        <h5 class="mt-4">Pay Online</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                            <i class="fa fa-plane fa-3x text-white"></i>
-                        </div>
-                        <h5 class="mt-4">Fly Today</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- <div class="container-xxl py-5"> -->
+        <!-- <div class="container"> -->
+            <!-- <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s"> -->
+                <!-- <h6 class="section-title bg-white text-center text-primary px-3">Process</h6> -->
+                <!-- <h1 class="mb-5">3 Easy Steps</h1> -->
+            <!-- </div> -->
+            <!-- <div class="row gy-5 gx-4 justify-content-center"> -->
+                <!-- <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s"> -->
+                    <!-- <div class="position-relative border border-primary pt-5 pb-4 px-4"> -->
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;"> -->
+                            <!-- <i class="fa fa-globe fa-3x text-white"></i> -->
+                        <!-- </div> -->
+                        <!-- <h5 class="mt-4">Choose A Destination</h5> -->
+                        <!-- <hr class="w-25 mx-auto bg-primary mb-1"> -->
+                        <!-- <hr class="w-50 mx-auto bg-primary mt-0"> -->
+                        <!-- <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s"> -->
+                    <!-- <div class="position-relative border border-primary pt-5 pb-4 px-4"> -->
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;"> -->
+                            <!-- <i class="fa fa-dollar-sign fa-3x text-white"></i> -->
+                        <!-- </div> -->
+                        <!-- <h5 class="mt-4">Pay Online</h5> -->
+                        <!-- <hr class="w-25 mx-auto bg-primary mb-1"> -->
+                        <!-- <hr class="w-50 mx-auto bg-primary mt-0"> -->
+                        <!-- <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s"> -->
+                    <!-- <div class="position-relative border border-primary pt-5 pb-4 px-4"> -->
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;"> -->
+                            <!-- <i class="fa fa-plane fa-3x text-white"></i> -->
+                        <!-- </div> -->
+                        <!-- <h5 class="mt-4">Fly Today</h5> -->
+                        <!-- <hr class="w-25 mx-auto bg-primary mb-1"> -->
+                        <!-- <hr class="w-50 mx-auto bg-primary mt-0"> -->
+                        <!-- <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
     <!-- Process Start -->
         
 
